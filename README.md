@@ -1,26 +1,143 @@
-# Python Basics (Course Code: 25BCON1079)
+# Python Basics & Practice Scripts
 
-Welcome to the **Python Basics** repository! This project serves as a structured collection of fundamental Python programs, lab exercises, and algorithmic solutions developed as part of the academic curriculum (`25BCON1079`).
-
----
-
-## 📌 Project Overview
-
-This repository is designed to track progress and maintain clean implementations of basic-to-intermediate Python programming concepts. It covers core syntax, control flow, mathematical logic, function design, and basic data structures.
-
-### Key Highlights
-- **Core Concepts:** Variables, Data Types, Conditional Statements, and Loops.
-- **Algorithms:** Classic numerical and sequence problems (e.g., Fibonacci series, Prime checks, Factorial).
-- **Functions & Modules:** Modular coding practices, parameter passing, and return values.
-- **Data Structures:** Operations using Lists, Tuples, Dictionaries, and Sets.
+A collection of beginner-friendly Python scripts demonstrating fundamental programming concepts, Object-Oriented Programming (OOP) basics, and standard algorithmic logic.
 
 ---
 
-## 📁 Repository Structure
+## 📋 Contents
+
+1. [Factorial Calculation](#1-factorial-calculation)
+2. [Student Class (OOP Basics)](#2-student-class-oop-basics)
+3. [Fibonacci Series Generator](#3-fibonacci-series-generator)
+
+---
+
+## 📜 Script Breakdown
+
+### 1. Factorial Calculation
+
+Calculates the factorial of a given integer `n` using an iterative `for` loop.
+
+```python
+n = 5  # Ensure 'n' is defined before running
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact = fact * i
+
+print(f"factorial of {n} = {fact}")
+```
+
+**Key Concepts:**
+
+* `for` loops
+* `range()` function
+* Variable accumulation
+* f-strings
+
+**Output:**
 
 ```text
-├── Basics/               # Introduction to syntax, inputs, and outputs
-├── Control_Flow/         # If-Else logic and Loops (For / While)
-├── Functions/            # Modular function implementations
-├── Lab_Work/             # Course lab assignments and weekly sheets
-└── README.md             # Project documentation
+factorial of 5 = 120
+```
+
+---
+
+### 2. Student Class (OOP Basics)
+
+Demonstrates basic Object-Oriented Programming principles by defining a `Student` class with attributes for name, roll number, and marks/performance.
+
+```python
+class Student:
+    def __init__(self, name, roll, marks):
+        self.name = name
+        self.roll = roll
+        self.marks = marks
+
+
+# Create a student object
+s1 = Student("Rahul", 101, "excellent")
+
+
+# Print the student's details
+print(f"name: {s1.name}")
+print(f"roll: {s1.roll}")
+print(f"marks: {s1.marks}")
+```
+
+**Key Concepts:**
+
+* Object-Oriented Programming (OOP)
+* Classes
+* `__init__` constructor
+* Instance variables
+* Object instantiation
+
+**Output:**
+
+```text
+name: Rahul
+roll: 101
+marks: excellent
+```
+
+---
+
+### 3. Fibonacci Series Generator
+
+Generates the first `n` numbers in the Fibonacci sequence and prints them separated by spaces.
+
+```python
+n = 10
+
+a, b = 0, 1
+result = []
+
+for _ in range(n):
+    result.append(a)
+
+    next_num = a + b
+    a = b
+    b = next_num
+
+print(' '.join(map(str, result)))
+```
+
+**Output:**
+
+```text
+0 1 1 2 3 5 8 13 21 34
+```
+
+**Key Concepts:**
+
+* Simultaneous assignment
+* List manipulation
+* `map()` function
+* String `.join()` method
+* Fibonacci sequence logic
+
+---
+
+
+## 📚 Learning Goals
+
+These scripts are designed to practice:
+
+* Basic Python syntax
+* Variables and data types
+* Loops
+* Lists
+* String manipulation
+* Built-in functions
+* Object-Oriented Programming
+* Basic algorithmic thinking
+
+---
+
+## 👨‍💻 Author
+
+**Shreyansh**
+
+A collection of Python practice programs created while learning programming fundamentals and problem-solving.
