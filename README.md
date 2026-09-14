@@ -1,143 +1,49 @@
-# Python Basics & Practice Scripts
+# python-basics-25BCON1288
 
-A collection of beginner-friendly Python scripts demonstrating fundamental programming concepts, Object-Oriented Programming (OOP) basics, and standard algorithmic logic.
+A collection of beginner-level Python programs written as part of coursework.
+Covers core fundamentals: loops, functions, conditionals, and classes/OOP.
 
----
+**Student:** Dhruv
+**Roll number:** 25BCON1288
 
-## 📋 Contents
+## Programs
 
-1. [Factorial Calculation](#1-factorial-calculation)
-2. [Student Class (OOP Basics)](#2-student-class-oop-basics)
-3. [Fibonacci Series Generator](#3-fibonacci-series-generator)
+| File | What it does | Notes |
+|---|---|---|
+| `facrorial.py` | Computes the factorial of `n` using a `for` loop and prints the result. | The file reads `n` but never defines it, so it will raise a `NameError` as-is. Set `n` before running (e.g. add `n = 5` at the top). Filename is a typo of `factorial.py`. |
+| `fibonacci.py` | Defines a `fibonacci(n)` function that returns the first `n` Fibonacci numbers as a list, and prints the first 10. | Runs standalone; no input needed. |
+| `structure.py` | Demonstrates a class (`FactorialData`) by storing `n`, computing its factorial in a loop, and printing the result. | Runs standalone; uses `n = 5`. |
+| `prime.py` | Prompts for an integer and reports whether it is prime (checks divisors up to √n). | Interactive — asks for input. |
+| `palindrome.py` | Prompts for a word/phrase, strips non-alphanumeric characters, and checks whether it reads the same forwards and backwards. | Interactive — asks for input. |
+| `student_class_OOP_Basics.py` | Defines a `Student` class with `name`, `roll`, and `marks`, creates one object, and prints its details. | Runs standalone; demonstrates basic OOP. |
 
----
+## Getting started
 
-## 📜 Script Breakdown
+1. Make sure Python 3 is installed (`python3 --version`).
+2. Run any program from the repository root:
 
-### 1. Factorial Calculation
+   ```bash
+   python3 fibonacci.py
+   python3 prime.py
+   python3 palindrome.py
+   python3 structure.py
+   python3 student_class_OOP_Basics.py
+   ```
 
-Calculates the factorial of a given integer `n` using an iterative `for` loop.
+3. For `facrorial.py`, define `n` first or add a line like `n = 5` before running:
 
-```python
-n = 5  # Ensure 'n' is defined before running
+   ```bash
+   python3 facrorial.py
+   ```
 
-fact = 1
+## Dependencies
 
-for i in range(1, n + 1):
-    fact = fact * i
+None. Every program uses only the Python standard library. No `requirements.txt` is needed.
 
-print(f"factorial of {n} = {fact}")
-```
+## Audit
 
-**Key Concepts:**
+See `AUDIT.md` for a claim-by-claim verification of the repository contents, a README benchmark, peer-review notes, and the HW-05 completion checklist.
 
-* `for` loops
-* `range()` function
-* Variable accumulation
-* f-strings
+## Maintainer
 
-**Output:**
-
-```text
-factorial of 5 = 120
-```
-
----
-
-### 2. Student Class (OOP Basics)
-
-Demonstrates basic Object-Oriented Programming principles by defining a `Student` class with attributes for name, roll number, and marks/performance.
-
-```python
-class Student:
-    def __init__(self, name, roll, marks):
-        self.name = name
-        self.roll = roll
-        self.marks = marks
-
-
-# Create a student object
-s1 = Student("Rahul", 101, "excellent")
-
-
-# Print the student's details
-print(f"name: {s1.name}")
-print(f"roll: {s1.roll}")
-print(f"marks: {s1.marks}")
-```
-
-**Key Concepts:**
-
-* Object-Oriented Programming (OOP)
-* Classes
-* `__init__` constructor
-* Instance variables
-* Object instantiation
-
-**Output:**
-
-```text
-name: Rahul
-roll: 101
-marks: excellent
-```
-
----
-
-### 3. Fibonacci Series Generator
-
-Generates the first `n` numbers in the Fibonacci sequence and prints them separated by spaces.
-
-```python
-n = 10
-
-a, b = 0, 1
-result = []
-
-for _ in range(n):
-    result.append(a)
-
-    next_num = a + b
-    a = b
-    b = next_num
-
-print(' '.join(map(str, result)))
-```
-
-**Output:**
-
-```text
-0 1 1 2 3 5 8 13 21 34
-```
-
-**Key Concepts:**
-
-* Simultaneous assignment
-* List manipulation
-* `map()` function
-* String `.join()` method
-* Fibonacci sequence logic
-
----
-
-
-## 📚 Learning Goals
-
-These scripts are designed to practice:
-
-* Basic Python syntax
-* Variables and data types
-* Loops
-* Lists
-* String manipulation
-* Built-in functions
-* Object-Oriented Programming
-* Basic algorithmic thinking
-
----
-
-## 👨‍💻 Author
-
-**Shreyansh**
-
-A collection of Python practice programs created while learning programming fundamentals and problem-solving.
+Dhruv — 25BCON1288
