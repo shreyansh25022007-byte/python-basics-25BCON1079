@@ -1,8 +1,8 @@
 # AUDIT.md — HW-05 Repository Audit
 
-**Repository:** `python-basics-25BCON1288`  
-**Roll number:** `25BCON1288`  
-**Student:** Dhruv
+**Repository:** `python-basics-25BCON1079`  
+**Roll number:** `25BCON1079`  
+**Student:** Shreyansh
 
 ## 1. Repository contents audit
 
