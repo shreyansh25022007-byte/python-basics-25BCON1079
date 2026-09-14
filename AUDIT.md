@@ -102,7 +102,7 @@ The session requires a peer to:
 
 ### Partner review notes
 
-**Partner name:** ____________________
+**Partner name:** Prankush Sharma
 
 **Claim 1 checked:** The repository currently shows six Python programs in the file list.
 
